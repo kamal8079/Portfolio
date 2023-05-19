@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcab1d48e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/images/logo.png" alt="" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openemenu()"></i>
+            </nav>
+            <div class="header-text slideLeft">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm <span>Kamal</span><br> Goplani From Ajmer</h1>
+            </div>
+        </div>
+    </div>
+<!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-para">A talented Software Engineer aspiring to gain a full-time position in 
+                        a reputed company. Gained extensive experience in software development,
+                        testing, and deployment through internships. A highly motivated and 
+                        hardworking individual skilled in HTML, CSS, JavaScript and Java.
+                        
+                        Seeking a position to utilize the gained skills and experience to 
+                        positively contribute to the company.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C and Java Developer</span><br>Building Project Using C And Java</li>
+                            <li><span>Web Development</span><br>Design Website Using HTML, CSS, and JavaScript</li>
+                            <li><span>App Development</span><br>Building Android Apps Using Android Studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Freelancing</span><br>More Than 2+ Years Of Freelancing Experience 
+                                In Social Media Management <br>And Video Editing.</li>
+                            <li><span>Social-Media Marketing</span><br>Developed Content For An Instagram 
+                                Account And Worked On Its Growth, <br>Resulting In 20K Followers.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"  id="education">
+                        <ul>
+                            <li><span>Current</span><br>Master's In Computer Application From Mewar University</li>
+                            <li><span>2022</span><br>Bachelor's Of Computer Application From MDSU Ajmer</li>
+                            <li><span>2019</span><br>12th From CBSE In Commerce</li>
+                            <li><span>2017</span><br>10th From CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sevices --> 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>A Web Developer with six Month of experience, specializing in HTML5, 
+                        JavaScript, PHP, MySQL, database design, and front-end development. Building high quality 
+                        websites and identify opportunities to enhance the user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Developer</h2>
+                    <p>An enthusiastic java developer that you can rely on, I have strong Java knowledge and Six 
+                        Month of experience in the computer program development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C Develpoer</h2>
+                    <p>An enthusiastic C developer that you can rely on, I have strong C knowledge and Six 
+                        Month of experience in the computer program development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--         Portfolio      -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Watch-Store Website</h3>
+                        <p>The Watch Pages features over 5 brands and thousands and thousands 
+                            of watches (and it is growing every week).
+                        </p>
+                        <a href="My-Projects\work-1\index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Lofi-Music Player</h3>
+                        <p>This Lofi-Player has many Lofi Music that You Love, 
+                            And These Songs Will Touch Your Heart 
+                        </p>
+                        <a href="My-Projects\work-2\index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>The goal of the game is for players to position their marks so that 
+                            they make a continuous line of three cells vertically, horizontally, or diagonally.
+                        </p>
+                        <a href="My-Projects\work-3\index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!--    Contact      -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> kamalgoplani@gmail.com</p>
+                    <p> <i class="fas fa-phone-alt"></i> 8079093816</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Kamal. &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp;<i class="fas fa-search"></i> www.kamalgoplani.com </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        var sidemenu = document.getElementById("sideMenu");
+        function openemenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2rA_u5Oa60S0g2naq8vizsd2Wt1lJdwm-RoJ47sH-C76v7i_pRR9_pwalbNPF4IiKxw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
